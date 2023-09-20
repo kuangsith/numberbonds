@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFEEF0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;  /* this will stack child elements vertically */
+}
+
+h1{
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+    align-items: center;
+}
+
+#questionSection::before {
+    content: '';
+    display: block;
+    height: calc(3em + 3.4em); /* Assuming h2 takes 1em and p takes 2em, adjust as needed */
+    visibility: hidden;
+}
+
+
+.choiceButton, .choiceBtn, #startGameButton, #newQuestionButton {
+    font-size: 24px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+}
+
+#choice1 {
+    background-color: #F28D35;
+    color: white;
+}
+
+#choice2 {
+    background-color: #D83367;
+    color: white;
+}
+
+#choice3 {
+    background-color: #635DFF;
+    color: white;
+}
+
+#choice4 {
+    background-color: #15EDED;
+    color: white;
+}
+
+.choiceButton:hover, .choiceBtn:hover, #startGameButton:hover, #newQuestionButton:hover {
+    transform: scale(1.05);
+    background-color: #FFB085;
+    color: white;
+}
+
+.choiceButton:active, .choiceBtn:active {
+    transform: scale(0.95);
+}
+
+#resultText {
+    color: green; /* Default color, will be changed by JavaScript */
+    text-align: center;
+}
+
+#resultImage {
+    width: 200px;
+    height: 200px;
+    text-align: center;
+}
+
+#resultSection {
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex-direction: column; /* Stack child elements vertically */
+}
+
+
+
+
+.correctChoice {
+    color: green;
+}
+
+.incorrectChoice {
+    color: red;
+}
+
+#playerAnswer,
+#actualAnswer {
+    text-align: center;
+}
+
+#numberBondsSvg, #questionSvg {
+    border: 2px solid #000;
+}
+
+circle {
+    fill: #FFD6A5;
+}
+
+line {
+    stroke: black;
+    stroke-width: 0.05;
+}
+
+text {
+    font-size: 0.4px;
+}
+
+circle.highlight {
+    fill: rgb(246, 255, 0);
+}

@@ -1,0 +1,81 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Addition Game</title>
+    <meta property="og:image" content="yoman.png">
+</head>
+
+<body>
+        <!-- Start Game Section -->
+        <div id="startGameSection">
+            <button id="startGameButton">Start Game</button>
+        </div>
+
+        <!-- Question Section -->
+        <div id="questionSection" class="hidden">
+            <svg id="questionSvg" viewBox="-2 -1 5.8 4" width="600" height="400">
+                <circle id="circle1" cx="0" cy="0" r="0.5" fill="white" stroke="black" stroke-width="0.05"/>
+                <circle id="circle2" cx="2" cy="0" r="0.5" fill="white" stroke="black" stroke-width="0.05"/>
+                <circle id="circle3" cx="1" cy="1.732" r="0.5" fill="white" stroke="black" stroke-width="0.05"/>
+            
+                <line id="line1" x1="0.5" y1="0" x2="1.5" y2="0" />
+            
+                <!-- Adjusted coordinates for line2 -->
+                <line id="line2" x1="0.25" y1="0.433" x2="0.75" y2="1.299" />
+            
+                <!-- Adjusted coordinates for line3 -->
+                <line id="line3" x1="1.75" y1="0.433" x2="1.25" y2="1.299" />
+            
+                <!-- Text for the circles -->
+                <text id="text1" x="0" y=".15" text-anchor="middle" dy="0.2em"></text>
+                <text id="text2" x="2" y=".15" text-anchor="middle" dy="0.2em"></text>
+                <text id="text3" x="1" y="1.882" text-anchor="middle" dy="0.2em"></text>
+            </svg>
+        </div>
+
+        <!-- Choices Section -->
+        <div id="choicesSection" class="hidden">
+            <button class="choiceButton" id="choice1">Choice 1</button>
+            <button class="choiceButton" id="choice2">Choice 2</button>
+            <button class="choiceButton" id="choice3">Choice 3</button>
+            <button class="choiceButton" id="choice4">Choice 4</button>
+        </div>
+
+
+        <!-- Result Section -->
+        <div id="resultSection" class="hidden">
+            <h2 id="resultText"></h2>
+            <p id="playerAnswer">Your answer was <span id="playerChoice"></span></p>
+            <svg id="numberBondsSvg" viewBox="-2 -1 5.8 4" width="600" height="400">
+                <circle id="circle1" cx="0" cy="0" r="0.5" fill="white" stroke="black" stroke-width="0.05"/>
+                <circle id="circle2" cx="2" cy="0" r="0.5" fill="white" stroke="black" stroke-width="0.05"/>
+                <circle id="circle3" cx="1" cy="1.732" r="0.5" fill="white" stroke="black" stroke-width="0.05"/>
+            
+                <line id="line1" x1="0.5" y1="0" x2="1.5" y2="0" />
+            
+                <!-- Adjusted coordinates for line2 -->
+                <line id="line2" x1="0.25" y1="0.433" x2="0.75" y2="1.299" />
+            
+                <!-- Adjusted coordinates for line3 -->
+                <line id="line3" x1="1.75" y1="0.433" x2="1.25" y2="1.299" />
+            
+                <!-- Text for the circles -->
+                <text id="text1" x="0" y=".15" text-anchor="middle" dy="0.2em"></text>
+                <text id="text2" x="2" y=".15" text-anchor="middle" dy="0.2em"></text>
+                <text id="text3" x="1" y="1.882" text-anchor="middle" dy="0.2em"></text>
+            </svg>
+            <br>
+            <center><button id="newQuestionButton">New Question</button></center>
+        </div>
+
+</body>
+
+</html>
